@@ -1,0 +1,43 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of go build
+/build/
+/bin/
+/dist/
+
+# Vendor directory (if you're not committing vendored deps)
+vendor/
+
+# Test result files
+*.cover
+*.prof
+
+# GoLand / IntelliJ
+.idea/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Dependency directories (if you use Go modules this is not needed)
+# Uncomment if you vendor deps manually
+# Godeps/
+
+# Module cache
+/go.sum
