@@ -26,7 +26,7 @@ func main() {
 		log.Fatal("PORT environment variable is not set")
 	}
 
-	dbUrl := os.Getenv("DE_URL")
+	dbUrl := os.Getenv("DB_URL")
 	if dbUrl == "" {
 		log.Fatal("DB environment variable is not set")
 	}
@@ -63,7 +63,7 @@ func main() {
 	}
 
 	log.Printf("Server starting on %v", PortString)
-	err := srv.ListenAndServe()
+	err = srv.ListenAndServe()
 
 	if err != nil {
 		log.Fatal(err)
